@@ -27,6 +27,7 @@
 
 	<modules>
 		<module>bq-discovery-service</module>
+		<module>bq-client-service</module>
 	</modules>
 
 	<dependencies>
