@@ -27,8 +27,10 @@ public class DemoController {
     @GetMapping(value = "/add")
     public Integer add(@RequestParam Integer a, @RequestParam Integer b) {
 
-        Integer r = a - b;
-        logger.info("server 1 : " + r );
+
+
+        Integer r = a + b;
+        logger.info("server 2 : " + r );
         return r;
     }
 

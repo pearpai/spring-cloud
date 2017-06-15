@@ -28,6 +28,8 @@
 	<modules>
 		<module>bq-discovery-service</module>
 		<module>bq-client-service</module>
+		<module>bq-client-service-2</module>
+		<module>bq-ribbon-service</module>
 	</modules>
 
 	<dependencies>
