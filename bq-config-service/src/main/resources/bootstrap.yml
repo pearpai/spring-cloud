@@ -7,8 +7,8 @@ spring:
         git:
           uri: https://github.com/pearpai/spring-cloud
           search-paths: service-config
-          username: xxxxxxx
-          password: xxxxxxx
+#          username: ******   如果是私有仓库需要 填写用户 密码
+#          password: ******
 
 server:
   port: 8006
