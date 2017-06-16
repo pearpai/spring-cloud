@@ -30,6 +30,8 @@
 		<module>bq-client-service</module>
 		<module>bq-client-service-2</module>
 		<module>bq-ribbon-service</module>
+		<module>bq-feign-service</module>
+		<module>bq-config-service</module>
 	</modules>
 
 	<dependencies>

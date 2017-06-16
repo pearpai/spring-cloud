@@ -4,8 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
 
 
-    <name>bq-ribbon-service</name>
-    <description>spring cloud ribbon</description>
+    <name>bq-config-service</name>
+    <description>spring cloud discovery</description>
 
     <parent>
         <groupId>com.bq</groupId>
@@ -13,7 +13,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>bq-ribbon-service</artifactId>
+    <artifactId>bq-config-service</artifactId>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -29,19 +29,8 @@
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-ribbon</artifactId>
+            <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-hystrix</artifactId>
-        </dependency>
-
     </dependencies>
 
 

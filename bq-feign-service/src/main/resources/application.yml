@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: bq-feign-service
+
+server:
+  port: 8005
+
+# 用于设置请求超时时间 特别是首次请求会出现超时现象
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
+
+feign:
+  hystrix:
+    enabled: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:password123@localhost:8761/eureka
+

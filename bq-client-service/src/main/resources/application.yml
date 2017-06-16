@@ -2,8 +2,8 @@ spring:
   application:
     name: bq-client-service
 
-server:
-  port: 8001
+#server:
+#  port: 8001
 
 eureka:
   client:

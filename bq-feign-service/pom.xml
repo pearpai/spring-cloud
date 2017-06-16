@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
 
-    <name>bq-ribbon-service</name>
+    <name>bq-feign-service</name>
     <description>spring cloud ribbon</description>
 
     <parent>
@@ -13,7 +13,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>bq-ribbon-service</artifactId>
+    <artifactId>bq-feign-service</artifactId>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -29,7 +29,7 @@
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-ribbon</artifactId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
         </dependency>
 
         <dependency>
@@ -37,10 +37,6 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-hystrix</artifactId>
-        </dependency>
 
     </dependencies>
 

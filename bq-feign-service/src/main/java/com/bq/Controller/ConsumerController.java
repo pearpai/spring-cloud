@@ -1,10 +1,8 @@
 package com.bq.Controller;
 
-import com.bq.service.ConsumerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
 /**
  * 负载服务器
@@ -14,13 +12,12 @@ import org.springframework.web.client.RestTemplate;
 public class ConsumerController {
 
     @Autowired
-    ConsumerService consumerService;
-
-
+    ConsumerClient consumerClient;
 
     @GetMapping("/add")
-    public String add(){
-        return consumerService.addService();
+    public Integer add() {
+        return consumerClient.add(10, 20);
     }
+
 
 }
