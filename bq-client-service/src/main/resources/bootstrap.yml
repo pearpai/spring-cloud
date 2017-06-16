@@ -1,12 +1,16 @@
+---
 spring:
   application:
     name: bq-client-service
-
-#server:
-#  port: 8001
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: bq-config-service
 
 eureka:
   client:
     service-url:
       defaultZone: http://user:password123@localhost:8761/eureka
+
 

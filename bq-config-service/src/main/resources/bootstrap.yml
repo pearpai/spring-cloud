@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: bq-config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/pearpai/spring-cloud
+          search-paths: service-config
+          username: xxxxxxx
+          password: xxxxxxx
+
+server:
+  port: 8006
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:password123@localhost:8761/eureka
+
+
