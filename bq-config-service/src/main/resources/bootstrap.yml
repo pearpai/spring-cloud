@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/pearpai/spring-cloud
+          uri: https://github.com/pearpai/spring-cloud/bq-config-service/src/main/resources/service-config
           search-paths: service-config
 #          username: ******   如果是私有仓库需要 填写用户 密码
 #          password: ******
