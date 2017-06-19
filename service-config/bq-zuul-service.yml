@@ -1,0 +1,9 @@
+---
+server:
+  port: 8007
+
+zuul:
+  routes:
+    api-client:
+      path=/client/**
+      serviceId=yx-client-service

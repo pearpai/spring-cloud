@@ -32,6 +32,7 @@
         <module>bq-ribbon-service</module>
         <module>bq-feign-service</module>
         <module>bq-config-service</module>
+        <module>bq-zuul-service</module>
     </modules>
 
     <dependencies>
