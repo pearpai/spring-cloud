@@ -1,9 +1,0 @@
----
-server:
-  port: 8007
-
-zuul:
-  routes:
-    api-client:
-      serviceId: bq-client-service
-      path: /client/**

@@ -5,8 +5,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/pearpai/spring-cloud/bq-config-service/src/main/resources/service-config
-          search-paths: service-config
+          uri: https://github.com/pearpai/spring-cloud
+          search-paths: bq-config-service/src/main/resources/service-config
 #          username: ******   如果是私有仓库需要 填写用户 密码
 #          password: ******
 
@@ -16,6 +16,6 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://user:password123@localhost:8761/eureka
+      defaultZone: http://user:password123@server1:8761/eureka,http://user:password123@server2:8761/eureka
 
 

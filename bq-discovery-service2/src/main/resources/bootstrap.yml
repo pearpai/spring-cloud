@@ -9,11 +9,11 @@ security:
     name: user
     password: password123
 server:
-  port: 8761
+  port: 8762
 eureka:
   instance:
-    hostname: server1
+    hostname: server2
   client:
     fetch-registry: false
     service-url:
-      defaultZone: http://user:password123@server2:8762/eureka
+      defaultZone: http://user:password123@server1:8761/eureka

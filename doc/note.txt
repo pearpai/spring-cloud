@@ -1,0 +1,4 @@
+java -jar **.jar --spring.profiles.active=xxx
+bootstrap-xxx.yml
+
+不同的初始化文件 处理方式
