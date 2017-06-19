@@ -5,5 +5,4 @@ server:
 zuul:
   routes:
     api-client:
-      path=/client/**
       serviceId=bq-client-service
